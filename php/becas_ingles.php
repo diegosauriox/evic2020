@@ -28,17 +28,27 @@ $mensaje .="Undergraduate or Graduate Program : " . $programa . " \r\n";
 $mensaje .="Native People:" . $pueblo_originario . "\r\n";
 $mensaje .="IEEE Membership Number" . $ieee . " \r\n";
 $para= 'evic@ufrontera.cl';
-$asunto= 'Inscripcion EVIC';
+$asunto= 'Registration EVIC';
+
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
 
 $header2 = 'From: ' . $para . " \r\n";
 $header2 .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header2 .= "Mime-Version: 1.0 \r\n";
 $header2 .= "Content-Type: text/plain";
-$mensaje2 = "Your link is: "; 
+
+$mensaje2 = "Dear (student, sr): \r\n";
+$mensaje2 .="This email is to confirm your registration in the summer school in computational intelligence , version 2020. This event will take place on December 10 and 11 from 10:45 a.m. (GMT -3) and it will be completely virtual via Zoom. To access EVIC 2020 use the following information: \r\n";
+$mensaje2 .="Meeeting ID : 949 6803 9537 \r\n";
+$mensaje2 .="Access code:  619681 \r\n";
+$mensaje2 .="https://zoom.us/j/94968039537?pwd=Znl2T0VzanZIUy9tc21aNnZhVEtndz09 \r\n";
+$mensaje2 .="very grateful for your interest in participating in this event, greets you \r\n";
+$mensaje2 .="Team EVIC2020 \r\n";
 
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+
 mail($email, $asunto, utf8_decode($mensaje2), $header2);
 
-header("Location:/index.html#inicio");
+header("Location:/index_ingles.html#inicio");
 ?>

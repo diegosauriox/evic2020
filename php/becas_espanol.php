@@ -20,27 +20,35 @@ $mensaje = "Nombre:" . $nombre . ",\r\n";
 $mensaje .="País: " . $pais . " \r\n";
 $mensaje .="Ciudad: " . $ciudad . " \r\n";
 $mensaje .="Email: " . $email . " \r\n";
-$mensaje .="¿Es profesional?: " . $profesional . " \r\n";
-$mensaje .="¿Es estudiante?: " . $estudiante . " \r\n";
+$mensaje .="Profesional: " . $profesional . " \r\n";
+$mensaje .="Estudiante: " . $estudiante . " \r\n";
 $mensaje .="Carrera: " . $carrera . " \r\n";
-$mensaje .="universidad donde estudia/estudio : " . $universidad . " \r\n";
+$mensaje .="Universidad donde estudia/estudio: " . $universidad . " \r\n";
 $mensaje .="Programa de Pregrado o PostGrado : " . $programa . " \r\n";
 $mensaje .="Pertenece a un Pueblo Originario?:" . $pueblo_originario . "\r\n";
-$mensaje .="Número de Miembro de la IEEE (si corresponde) " . $ieee . " \r\n";
-
-
+$mensaje .="Número de Miembro de la IEEE" . $ieee . " \r\n";
 $para= 'evic@ufrontera.cl';
-$asunto= 'Inscripccion EVIC';
+$asunto= 'Inscripción EVIC';
 
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
 
 $header2 = 'From: ' . $para . " \r\n";
 $header2 .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header2 .= "Mime-Version: 1.0 \r\n";
 $header2 .= "Content-Type: text/plain";
-$mensaje2 = "su links es: "; 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+
+$mensaje2 = "Estimado (estudiante/profesional): \r\n";
+$mensaje2 .="Este correo es para confirmar su inscripción en la escuela de verano de inteligencia computacional EVIC, versión 2020. Este evento se realizará los días 10 y 11 de diciembre a partir de las 10:45 hrs. (GMT -3) y será completamente virtual vía Zoom. Los datos para acceder a EVIC2020 son los siguientes: \r\n";
+$mensaje2 .="ID de la reunión: 949 6803 9537 \r\n";
+$mensaje2 .="Código de acceso  619681 \r\n";
+$mensaje2 .="https://zoom.us/j/94968039537?pwd=Znl2T0VzanZIUy9tc21aNnZhVEtndz09 \r\n";
+$mensaje2 .="Muy agradecido por su interés en participar en este evento, les saluda \r\n";
+$mensaje2 .="Equipo EVIC 2020 \r\n";
+
+
+
 mail($email, $asunto, utf8_decode($mensaje2), $header2);
 
 header("Location:/index.html#inicio");
-
 ?>
