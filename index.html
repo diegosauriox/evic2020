@@ -171,7 +171,7 @@
 			<div class="space"></div>					
 
 		<div class="percent-one-half portfolio-inner">
-			<a href="images/programav4.png" title="Programa EVIC 2020" rel="prettyPhoto"><img src="images/programav5.png" alt="programa" /></a>		
+			<a href="images/programav4.png" title="Programa EVIC 2020" rel="prettyPhoto"><img src="images/programav4.png" alt="programa" /></a>		
 		</div>	
 
 		<div class="percent-one-half column-last">
@@ -218,18 +218,6 @@
 		</div>
 		<div class="half space"></div>
 		<div class="percent-one-third box fadeInDown">
-			<img class="team-avatar" src="images/oradores/img-10.png" alt="Camilo Lozano" style="filter: grayscale(100%);"/>	
-		</div>	
-
-		<div class="percent-two-third column-last">
-			<h2><p><strong>Camilo Lozano</strong></h2>
-			<h3><p><strong>Title: Innovation process supported by TELSUR to various national industries.</strong></p>
-			    <p>This presentation will show the process of innovation, co-creation and the different stages that compose it. In addition, support cases will be presented to different industries that have been managed by Telsur - GTD.</p>
-			</h3>
-		</div>
-
-		<div class="half space"></div>
-		<div class="percent-one-third box fadeInDown">
 			<img class="team-avatar" src="images/oradores/img-04.png" alt="Piero Bonissone" style="filter: grayscale(100%);"/>	
 		</div>	
 
@@ -245,11 +233,22 @@
 		</div>
 		<div class="half space"></div>
 		<div class="percent-one-third box fadeInDown">
-			<img class="team-avatar" src="images/oradores/img-11.png" alt="Carla Vairetti" style="filter: grayscale(100%);"/>	
+			<img class="team-avatar" src="images/oradores/img-07.png" alt="Carla Vairetti" style="filter: grayscale(100%);"/>	
 		</div>	
 
 		<div class="percent-two-third column-last">
-			<h2><p><strong>Dra. Carla Vairetti/Dr. Sebastián Maldonado</strong></h2>
+			<h2><p><strong>Dra. Carla Vairetti</strong></h2>
+			<h3><p><strong>Title: How Computational Intelligence is changing the Customer Experience</strong></p>
+			    <p>Customer experience is a hot topic in business analytics. To gain a competitive advantage on a global scale, it is necessary to focus strongly on the customer. Technology development and investment has shown the importance of developing state of the art solutions to enhance the understanding of the customer. Companies that do this are 6% more profitable and 5% more productive than others on average. The interaction between a company and its customers has increased in the last years and, with it, the collection of data from these interactions. Customer feedback is a rich source of information about the perception of a company, but it is difficult to understand the hidden information that is behind the reviews and relate it with key areas of the business. In this talk we present a framework for extracting valuable knowledge from customer feedback data using  AI models, such as BERT, and other natural language processing techniques. This strategy not only supports automatic analysis of new data but also provides important insights into the applications. Experiments carried out using 25,943 customer survey responses related to 39 service companies in 13 different economic sectors demonstrate the virtues of the approach.</p> 
+			</h3>
+		</div>
+		<div class="half space"></div>
+		<div class="percent-one-third box fadeInDown">
+			<img class="team-avatar" src="images/oradores/img-09.png" alt="Sebastian Maldonado" style="filter: grayscale(100%);"/>	
+		</div>	
+
+		<div class="percent-two-third column-last">
+			<h2><p><strong>Dr. Sebastián Maldonado</strong></h2>
 			<h3><p><strong>Title: How Computational Intelligence is changing the Customer Experience</strong></p>
 			    <p>Customer experience is a hot topic in business analytics. To gain a competitive advantage on a global scale, it is necessary to focus strongly on the customer. Technology development and investment has shown the importance of developing state of the art solutions to enhance the understanding of the customer. Companies that do this are 6% more profitable and 5% more productive than others on average. The interaction between a company and its customers has increased in the last years and, with it, the collection of data from these interactions. Customer feedback is a rich source of information about the perception of a company, but it is difficult to understand the hidden information that is behind the reviews and relate it with key areas of the business. In this talk we present a framework for extracting valuable knowledge from customer feedback data using  AI models, such as BERT, and other natural language processing techniques. This strategy not only supports automatic analysis of new data but also provides important insights into the applications. Experiments carried out using 25,943 customer survey responses related to 39 service companies in 13 different economic sectors demonstrate the virtues of the approach.</p> 
 			</h3>
@@ -360,7 +359,7 @@
     				<fieldset class="percent-one-half">
     					<p><strong>Número de Miembro de la IEEE (Opcional)</strong></p>
     					<input id="ieee" type="text" name="ieee" />
-    					<input type="submit" name="send" value="ENVIAR" id="submit" class="button orange"/>
+    					<input type="submit" name="send" value="ENVIAR" id="submit" onclick="alert('Inscripción realizada correctamente, la confirmación de este proceso ha sido enviada a la siguiente dirección de correo: correo@usuario.com')" class="button orange"/>
     				</fieldset>				
 				</form>			
 			</div><!--end contactform-->
@@ -528,41 +527,39 @@
 
 	<!-- AUSPICIADORES SECTION -->
 	
-
-	<section id="clients">	
+	<section id="auspiciadores">	
 		<section class="centered-wrapper">
 			<div class="double-space"></div>
 			
-			<h1 class="section-title">Auspiciadores</h1>	
+			<h1 class="section-title">AUSPICIADORES</h1>	
 			<div class="space"></div>
 			
-			<div class="percent-one-third box fadeInDown">
-				<img class="team-avatar" src="images/clients/logo-ufro.png" alt=" " />
-										
-						
-			</div><!--end one-third-->
-			<div class="percent-one-third box fadeInDown">
-				<img class="team-avatar" src="images/clients/telsur.png" alt=" " />
-										
-						
-			</div><!--end one-third-->
-			<div class="percent-one-third column-last box fadeInDown">
-				<img class="team-avatar" src="images/clients/ieee.png" alt=" " />
-										
-						
-			</div><!--end one-third-->
+			<div class="clients-carousel">
+				<div id="owl-clients" class="owl-carousel box fadeInDown">		
+					<div >
+						<a href="https://www.ufro.cl/" target="_blank">
+							<img src="images/clients/ufro.png" alt="" />
+						</a>
+					</div>
+					<div class="space">
+					</div>	
+					<div >
+						<a href="https://cis.ieee.org/" target="_blank">
+							<img src="images/clients/ieee.png" alt="" />
+						</a>
+					</div>	
+				</div>
+			</div>
 			<div class="double-space"></div>
 		</section>
-	</section>		
-
-
+	</section>	
 
 
 	<footer id="footer">		
 		<div id="bottomfooter">		
 			<div class="centered-wrapper">		
 				<div class="percent-two-third">
-					<p>Copyright &copy; 2020 - EVIC2020 | All Rights Reserved</p>
+					<p>Copyright &copy; 2020 - Diegosaurio | All Rights Reserved</p>
 				</div><!--end one-half-->
 			</div><!--end centered-wrapper-->				
 		</div><!--end bottomfooter-->
@@ -601,6 +598,8 @@
 
 	<!-- CUSTOM -->
 	<script type="text/javascript" src="js/custom.js"></script>
+    <script>
 
+</script>
 </body> 
 </html>
