@@ -40,9 +40,9 @@ $header2 .= "Content-Type: text/plain";
 
 $mensaje2 = "Dear (student, sr): \r\n";
 $mensaje2 .="This email is to confirm your registration in the summer school in computational intelligence , version 2020. This event will take place on December 10 and 11 from 10:45 a.m. (GMT -3) and it will be completely virtual via Zoom. To access EVIC 2020 use the following information: \r\n";
-$mensaje2 .="Meeeting ID : 949 6803 9537 \r\n";
+$mensaje2 .="Meeeting ID : 946 8647 7759 \r\n";
 $mensaje2 .="Access code:  619681 \r\n";
-$mensaje2 .="https://zoom.us/j/94968039537?pwd=Znl2T0VzanZIUy9tc21aNnZhVEtndz09 \r\n";
+$mensaje2 .="https://zoom.us/j/94686477759?pwd=bVF1VTB1b05TVVhTaUJLQzhuYlovZz09 \r\n";
 $mensaje2 .="very grateful for your interest in participating in this event, greets you \r\n";
 $mensaje2 .="Team EVIC2020 \r\n";
 
